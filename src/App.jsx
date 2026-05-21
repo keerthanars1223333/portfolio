@@ -266,7 +266,7 @@ export default function App() {
               </a>
               <a href="tel:+919876543210" className="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-pink-500/40 hover:bg-pink-500/5 transition-all duration-300 block">
                 <span className="block text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">Call Me</span>
-                <span className="font-medium text-slate-200 text-xs">+91 9876543210</span>
+                <span className="font-medium text-slate-200 text-xs">+91 9526203077</span>
               </a>
               <div className="p-4 bg-white/5 rounded-xl border border-white/5 hover:border-pink-500/40 transition-all duration-300 block">
                 <span className="block text-xs text-slate-400 uppercase tracking-wider font-semibold mb-1">Location</span>

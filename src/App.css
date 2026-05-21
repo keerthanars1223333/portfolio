@@ -2,7 +2,8 @@
 
 @layer base {
   body {
-    background-color: #0b0813;
+    /* 👈 ATTRACTIVE: ബ്ലാക്ക് ലുക്ക് പൂർണ്ണമായി മാറ്റി, നല്ല ആഴമുള്ള ലക്ഷ്വറി എമറാൾഡ് ഗ്രീൻ ബാക്ക്ഗ്രൗണ്ട് */
+    background-color: #032213; 
     overflow-x: hidden;
     scroll-behavior: smooth;
     @apply antialiased;
@@ -13,7 +14,8 @@
   /* ============ GLOBAL PAGE BORDER ANIMATION ============ */
   .page-border-line {
     position: fixed;
-    background: linear-gradient(90deg, transparent, #00f2fe, #ec4899, transparent);
+    /* 👈 ATTRACTIVE: കൂടുതൽ തിളക്കമുള്ള പ്രീമിയം ഗോൾഡ് & എമറാൾഡ് ഗ്രീൻ ബോർഡർ */
+    background: linear-gradient(90deg, transparent, #fbbf24, #10b981, transparent);
     z-index: 100;
     pointer-events: none;
   }
@@ -31,7 +33,7 @@
     right: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #00f2fe, #ec4899, transparent);
+    background: linear-gradient(180deg, transparent, #fbbf24, #10b981, transparent);
     animation: move-right 6s linear infinite;
     animation-delay: 1.5s;
   }
@@ -41,7 +43,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: linear-gradient(270deg, transparent, #00f2fe, #ec4899, transparent);
+    background: linear-gradient(270deg, transparent, #fbbf24, #10b981, transparent);
     animation: move-bottom 6s linear infinite;
     animation-delay: 3s;
   }
@@ -51,7 +53,7 @@
     left: 0;
     width: 3px;
     height: 100%;
-    background: linear-gradient(0deg, transparent, #00f2fe, #ec4899, transparent);
+    background: linear-gradient(0deg, transparent, #fbbf24, #10b981, transparent);
     animation: move-left 6s linear infinite;
     animation-delay: 4.5s;
   }
@@ -85,8 +87,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     cursor: pointer;
     transition: transform 0.3s ease;
   }
@@ -101,17 +103,17 @@
     position: absolute;
     width: 150px;
     height: 150px;
-    background: conic-gradient(from 0deg, transparent, #00f2fe, #ec4899, transparent 60%);
+    background: conic-gradient(from 0deg, transparent, #fbbf24, #10b981, transparent 60%);
     animation: rotate-name-border 4s linear infinite;
     z-index: 0;
   }
 
-  /* ടെക്സ്റ്റ് വ്യക്തമായി കാണാനുള്ള അകത്തെ ബ്ലാക്ക് മാസ്ക് ലെയർ */
+  /* ടെക്സ്റ്റ് വ്യക്തമായി കാണാനുള്ള അകത്തെ മാസ്ക് ലെയർ */
   .name-glow-wrapper::after {
     content: '';
     position: absolute;
     inset: 2px;
-    background: #0f0c1b;
+    background: #021e11;
     border-radius: 9999px;
     z-index: 1;
   }
@@ -129,7 +131,7 @@
 
   /* ============ MODERN MESH GRADIENT BLUR BACKGROUND ============ */
   .space-bg {
-    background-color: #0a0712;
+    background-color: #021a0e;
     position: relative;
     overflow: hidden;
   }
@@ -139,10 +141,10 @@
     position: absolute;
     inset: 0;
     background: 
-      radial-gradient(circle at 20% 30%, rgba(0, 242, 254, 0.15) 0%, transparent 40%),
-      radial-gradient(circle at 80% 20%, rgba(236, 72, 153, 0.12) 0%, transparent 40%),
-      radial-gradient(circle at 50% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
-      radial-gradient(circle at 90% 70%, rgba(59, 130, 246, 0.1) 0%, transparent 35%);
+      radial-gradient(circle at 20% 30%, rgba(251, 191, 36, 0.15) 0%, transparent 45%),
+      radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.18) 0%, transparent 45%),
+      radial-gradient(circle at 50% 80%, rgba(5, 150, 105, 0.2) 0%, transparent 55%),
+      radial-gradient(circle at 90% 70%, rgba(251, 191, 36, 0.1) 0%, transparent 40%);
     z-index: 0;
     pointer-events: none;
     filter: blur(40px);
@@ -154,7 +156,7 @@
     height: 600px;
     top: -10%;
     left: -10%;
-    background: radial-gradient(circle, rgba(0, 242, 254, 0.18) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.14) 0%, transparent 70%);
     filter: blur(80px);
     animation: mesh-float-1 25s ease-in-out infinite alternate;
     z-index: 0;
@@ -167,7 +169,7 @@
     height: 700px;
     bottom: -10%;
     right: -10%;
-    background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
     filter: blur(90px);
     animation: mesh-float-2 30s ease-in-out infinite alternate;
     z-index: 0;
@@ -180,7 +182,7 @@
     height: 500px;
     top: 40%;
     left: 30%;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(5, 150, 105, 0.15) 0%, transparent 70%);
     filter: blur(100px);
     animation: mesh-float-1 28s ease-in-out infinite alternate-reverse;
     z-index: 0;
@@ -202,8 +204,8 @@
 
   /* ============ NAVBAR STYLE ============ */
   .modern-nav {
-    background: rgba(10, 7, 28, 0.45);
-    box-shadow: 0 8px 32px 0 rgba(0, 242, 254, 0.02);
+    background: rgba(2, 26, 14, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(16, 185, 129, 0.04);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -217,8 +219,8 @@
   }
 
   .nav-link:hover {
-    color: #00f2fe;
-    text-shadow: 0 0 8px rgba(0, 242, 254, 0.4);
+    color: #fbbf24;
+    text-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
   }
 
   .nav-link::after {
@@ -229,7 +231,7 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background: linear-gradient(90deg, #00f2fe, #ec4899);
+    background: linear-gradient(90deg, #fbbf24, #10b981);
     transform-origin: bottom right;
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -241,14 +243,14 @@
 
   /* ============ ULTRA MODERN HEADINGS & TEXT GLOW ============ */
   @keyframes text-glow-pulse {
-    0%, 100% { filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.4)); }
-    50% { filter: drop-shadow(0 0 25px rgba(236, 72, 153, 0.5)); }
+    0%, 100% { filter: drop-shadow(0 0 15px rgba(251, 191, 36, 0.35)); }
+    50% { filter: drop-shadow(0 0 25px rgba(16, 185, 129, 0.4)); }
   }
 
   .cyber-heading {
     font-family: 'Syne', sans-serif;
     animation: text-glow-pulse 4s ease-in-out infinite;
-    background: linear-gradient(135deg, #ffffff 20%, #00f2fe 60%, #ec4899 100%);
+    background: linear-gradient(135deg, #ffffff 10%, #fbbf24 50%, #10b981 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -259,8 +261,8 @@
   }
 
   @keyframes heading-move {
-    0%, 100% { transform: translateY(0px); filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.1)); }
-    50% { transform: translateY(-3px); filter: drop-shadow(0 0 16px rgba(0, 242, 254, 0.3)); }
+    0%, 100% { transform: translateY(0px); filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.1)); }
+    50% { transform: translateY(-3px); filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.25)); }
   }
 
   /* ============ ULTRA 3D PROFILE PORTAL ANIMS ============ */
@@ -293,10 +295,10 @@
 
   /* ============ NEON CARD (MAIN CONTAINER) ============ */
   .neon-card {
-    background: rgba(10, 7, 24, 0.65);
+    background: rgba(2, 26, 14, 0.7);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    border: 1px solid rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -314,17 +316,17 @@
     width: 250%;
     top: -75%;
     left: -75%;
-    background: conic-gradient(from 0deg, transparent, rgba(0, 242, 254, 0.4), rgba(236, 72, 153, 0.4), rgba(0, 242, 254, 0.4), transparent);
+    background: conic-gradient(from 0deg, transparent, rgba(251, 191, 36, 0.3), rgba(16, 185, 129, 0.3), rgba(251, 191, 36, 0.3), transparent);
     animation: rotate-gradient 20s linear infinite;
     z-index: -2;
-    opacity: 0.2;
+    opacity: 0.25;
   }
 
   .neon-card::after {
     content: '';
     position: absolute;
     inset: 1.5px;
-    background: #090615;
+    background: #01140a;
     border-radius: 23px;
     z-index: -1;
   }
@@ -345,7 +347,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 242, 254, 0.04), rgba(236, 72, 153, 0.04));
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.05), rgba(16, 185, 129, 0.05));
     opacity: 0;
     transition: opacity 0.4s ease;
   }
@@ -355,9 +357,9 @@
   }
 
   .hover-glow-tile:hover {
-    border-color: rgba(0, 242, 254, 0.2);
+    border-color: rgba(251, 191, 36, 0.3);
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 242, 254, 0.05);
+    box-shadow: 0 15px 30px rgba(16, 185, 129, 0.05);
   }
 
   .skill-progress-bar {
@@ -377,20 +379,33 @@
 
   /* ============ MODERN FOOTER STYLE ============ */
   .modern-footer {
-    background: rgba(10, 7, 24, 0.45);
+    background: rgba(2, 26, 14, 0.55);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
   }
 
   .footer-social-link {
     transition: all 0.3s ease;
-    color: #94a3b8;
+    color: #8294a8;
   }
 
   .footer-social-link:hover {
-    color: #00f2fe;
+    color: #fbbf24;
     transform: translateY(-3px);
-    filter: drop-shadow(0 0 8px rgba(0, 242, 254, 0.6));
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6));
+  }
+
+  /* 👈 NEW FEATURE: ഫൂട്ടറിലെ പേര് മാത്രം ലക്ഷ്വറി ഗോൾഡ് കളറിൽ എടുത്തു കാണിക്കാൻ */
+  .footer-name-highlight {
+    color: #fbbf24;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .footer-name-highlight:hover {
+    color: #10b981; /* ഹോവർ ചെയ്യുമ്പോൾ പച്ച വെളിച്ചം വരാൻ */
+    text-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
   }
 }
